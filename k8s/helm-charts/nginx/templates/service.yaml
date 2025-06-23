@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-svc
   labels:
-    app:nginx
+    app: nginx
 spec:
   type: ClusterIP
   selector:
