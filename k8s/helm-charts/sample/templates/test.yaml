@@ -3,6 +3,7 @@
 environment: {{ .Values.env }}
 testdata: {{ lower .Values.mystring }}
 newtestdata: {{ replace " " "-" .Values.mystring }}
+lowerstringtestdata: {{ replace " " "-" .Values.mystring | lower }}
 labels:
   app: {{ .Release.Name }}
   chart: {{ .Chart.Name }}
