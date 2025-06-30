@@ -2,7 +2,7 @@
 {{- /* I am yaml commnet and not present in generated yaml*/}}
 environment: {{ .Values.env }}
 testdata: {{ lower .Values.mystring }}
-newtestdata: {{ replace developer devops .Values.mystring }}
+newtestdata: {{ replace " " "-" .Values.mystring }}
 labels:
   app: {{ .Release.Name }}
   chart: {{ .Chart.Name }}
