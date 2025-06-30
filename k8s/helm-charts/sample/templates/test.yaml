@@ -1,7 +1,7 @@
 #I am yaml commnt and present in generated yaml
 {{- /* I am yaml commnet and not present in generated yaml*/}}
 environment: {{ .Values.env }}
-testdata: {{ .Values.mystring }}
+testdata: {{ lower .Values.mystring }}
 labels:
   app: {{ .Release.Name }}
   chart: {{ .Chart.Name }}
