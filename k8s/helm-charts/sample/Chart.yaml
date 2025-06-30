@@ -1,0 +1,5 @@
+apiVersion: v2
+name: sample
+descritpion: helm chart for sample deployment
+type: application
+version: 0.1.0
