@@ -2,3 +2,6 @@
 {{- /* I am yaml commnet and not present in generated yaml*/}}
 environment: {{ .Values.env }}
 testdata: {{ .Values.mystring }}
+labels:
+  app: {{ .Release.Name }}
+  chart: {{ CHart.Name }}
