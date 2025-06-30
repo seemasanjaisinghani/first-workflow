@@ -4,4 +4,4 @@ environment: {{ .Values.env }}
 testdata: {{ .Values.mystring }}
 labels:
   app: {{ .Release.Name }}
-  chart: {{ CHart.Name }}
+  chart: {{ Chart.Name }}
