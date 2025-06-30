@@ -1,1 +1,2 @@
 environment: {{ .Values.env }}
+testdata: {{ .Values.mystring }}
