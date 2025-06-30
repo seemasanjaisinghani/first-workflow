@@ -22,3 +22,8 @@ spec:
             name: demo
             port:
               number: 80
+
+THis works well with minikube.
+
+FOr now we can check service in killercodas using -
+nohup kubectl port-forward service/demo 8080:80 > portforward.log 2>&1 &
